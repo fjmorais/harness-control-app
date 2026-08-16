@@ -6,11 +6,11 @@ Iniciado em: 2026-08-16
 
 ## Tipo: a — Aplicação / API / Chatbot / Agente de IA (app web: Next.js + FastAPI + PostgreSQL)
 
-## Fase atual: 0 — Ideia capturada
+## Fase atual: 1 — Grill concluído, pronto para PRD
 
 ## Checklist
 - [x] 0. Ideia + SI assessment (2026-08-16)
-- [ ] 1. Grill concluído
+- [x] 1. Grill concluído (2026-08-16)
 - [ ] 2. PRD gerado
 - [ ] 3. Harness montado (/harness-architect)
 - [ ] 4. Tasks criadas
