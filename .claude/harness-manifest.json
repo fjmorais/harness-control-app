@@ -1,0 +1,309 @@
+{
+  "manifest_schema_version": "2.0",
+  "harness_version": "0.1.0",
+  "canonical_path": "/home/fabiano/agent-harness-canonico",
+  "installed_at": "2026-08-16",
+  "mode": "NOVO",
+  "capabilities": {
+    "workflow": true,
+    "dev_loop": true,
+    "delivery_metrics": true,
+    "telemetry": {
+      "cursor": "unavailable"
+    }
+  },
+  "artefacts": {
+    "CLAUDE.md": {
+      "source": "generated",
+      "customized": true
+    },
+    "AGENTS.md": {
+      "source": "generated",
+      "customized": true
+    },
+    "CONTEXT.md": {
+      "source": "generated",
+      "customized": true
+    },
+    ".claude/settings.json": {
+      "source": "generated",
+      "customized": true
+    },
+    "HANDOFF.md": {
+      "source": "generated",
+      "customized": true
+    },
+    "HARNESS-GUIDE.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    "COMO-USAR.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    "DEV-LOOP.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    "GUIA-PASSO-A-PASSO.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".env.example": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".gitignore": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".mcp.json": {
+      "source": "canonical",
+      "customized": false
+    },
+    "requirements.txt": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/commands/novo-projeto.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/commands/scorecard.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/commands/validar.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/design": {
+      "source": "generated",
+      "customized": true
+    },
+    ".claude/projetos": {
+      "source": "generated",
+      "customized": true
+    },
+    ".claude/guias": {
+      "source": "generated",
+      "customized": true
+    },
+    ".claude/sdd": {
+      "source": "generated",
+      "customized": true
+    },
+    "config": {
+      "source": "canonical",
+      "customized": false
+    },
+    "docs": {
+      "source": "canonical",
+      "customized": false
+    },
+    "metrics": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/skills/harness-architect": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/skills/grill-me": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/skills/grill-with-docs": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/skills/to-prd": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/skills/to-tasks": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/skills/to-issues": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/skills/new-adr": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/skills/sync-context": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/skills/make-readme": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/skills/handoff": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/skills/write-a-skill": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/skills/guia-architect": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/agents/dev/prompt-crafter.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/agents/dev/dev-loop-executor.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/agents/workflow/guia-brainstorm.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/agents/workflow/guia-escopo.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/agents/workflow/guia-roteiro.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/agents/workflow/guia-etapas.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/agents/workflow/guia-publish.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/agents/workflow/guia-iterate.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/kb/design-instrucional": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/commands/dev.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/commands/novo-guia.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/dev": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/skills/gen-tests": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/rules/estilo-codigo.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/rules/testes.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/rules/seguranca.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/rules/definicao-de-pronto.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/agents/dev/codebase-explorer.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/agents/dev/revisor-codigo.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/agents/dev/meeting-analyst.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/kb/fastapi": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/rules/backend.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/agents/architect/sql-architect.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/kb/langgraph": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/rules/langgraph.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/agents/dev/prompt-engineer.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/agents/architect/rag-architect.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/kb/supabase": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/rules/frontend.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/kb/testing/patterns/vitest-patterns.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/kb/multi-tenant": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/rules/multi-tenant.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/kb/observabilidade": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/kb/rag": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/rules/rag.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/agents/architect/search-strategy-advisor.md": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/kb/pipeline": {
+      "source": "canonical",
+      "customized": false
+    },
+    ".claude/rules/pipeline.md": {
+      "source": "canonical",
+      "customized": false
+    }
+  }
+}

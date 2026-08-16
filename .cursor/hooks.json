@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "uv run python3 scripts/harness_hook.py"
+      }
+    ],
+    "sessionEnd": [
+      {
+        "command": "uv run python3 scripts/harness_hook.py"
+      }
+    ],
+    "preToolUse": [
+      {
+        "command": "uv run python3 scripts/harness_hook.py"
+      }
+    ],
+    "postToolUse": [
+      {
+        "command": "uv run python3 scripts/harness_hook.py"
+      }
+    ],
+    "subagentStop": [
+      {
+        "command": "uv run python3 scripts/harness_hook.py"
+      }
+    ]
+  }
+}

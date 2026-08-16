@@ -1,0 +1,41 @@
+---
+description: PII — regras específicas deste projeto (Harness Control app)
+globs: []
+alwaysApply: true
+---
+
+
+# PII — regras específicas deste projeto (Harness Control app)
+
+Complementa `.claude/rules/seguranca.md` (regra transversal de SI). Este arquivo existe porque o
+SI Assessment deste projeto é **nível c** — PII real de usuários autenticados, não hipotética.
+
+## Campos de PII conhecidos (a expandir conforme o schema do PostgreSQL evoluir)
+
+- `users.email` — nunca em log, nunca em URL, exibido mascarado (`f***@***.com`) fora de telas
+  de administração explicitamente autorizadas.
+- `sessions.*` — token/cookie de sessão nunca logado em texto claro.
+- `audit_events.*` — o evento em si é intencionalmente uma trilha de "quem fez o quê", mas o
+  acesso de leitura à tabela é restrito a `admin`/`operator` da própria raiz, nunca exposto via
+  endpoint sem RBAC.
+- Qualquer campo de `provider_accounts` que carregue identificador de conta externa (ex.: e-mail
+  vinculado a uma conta Anthropic/OpenAI) segue a mesma regra de mascaramento do `users.email`.
+
+## Invariantes
+
+- PII nunca aparece em log estruturado ou plano — nem em stdout do backend, nem em eventos
+  emitidos para OpenTelemetry.
+- PII nunca é exposta em query string de URL — sempre em body de request autenticado ou path
+  param opaco (ex.: `project_id`, nunca `?email=...`).
+- PII exibida na UI **somente via função de mascaramento** dedicada — o banco guarda o dado raw
+  para filtragem/autenticação, a exibição é sempre mascarada por padrão.
+- Finalidade (LGPD Art. 6º): PII só é processada para autenticação, autorização e auditoria —
+  não para qualquer outro propósito sem consentimento explícito registrado.
+- Minimização: novos campos de usuário só entram no schema se estritamente necessários pra
+  autenticação/autorização/auditoria — não colecionar dado "pode ser útil depois".
+
+## Quando isso se aplica
+
+Todo ADR que envolva mudança em `users`, `sessions`, `audit_events`, `provider_accounts` ou
+qualquer tabela nova que identifique pessoa natural precisa de uma seção "Impacto em SI/LGPD"
+explícita, mesmo que a resposta seja "nenhum campo novo de PII".
